@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //        linked();
-//         ochered();
-calc();
+//        ochered();
+            calc();
     }
 
 //    1. Пусть дан LinkedList с несколькими элементами. Реализуйте метод, который вернет “перевернутый” список.
