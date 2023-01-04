@@ -58,9 +58,8 @@ public class Main {
             System.out.println("В наличии ОЗУ с " + mapOzy.keySet() + " GB " +
                     "Укажите минимальное значение.");
 
-
-
             b = reader.nextInt();
+
             if (b > 16) {
                 System.out.println("К сожалению такие модели отсутствуют.");
             }
@@ -100,10 +99,52 @@ public class Main {
                         nout2);
             }
         }
+
+
+        Map<Integer, String> mapWindow = new HashMap<>();
+        if (a == 3) {
+            mapWindow.put(1, nout.getWindows());
+
+
+            System.out.println("В наличии операционная система с  Windows. Укажите минимальное значение (1).");
+            b = reader.nextInt();
+            if (b == 1) {
+                System.out.println("В наличии операционная система Windows:\n" +
+                        nout + "\n" + nout2 + "\n" + nout3 + "\n" + nout4);
+
+            }
+
+
+        }
+
+
+        Map<Integer, String> mapColor = new HashMap<>();
+        if (a == 4) {
+            mapColor.put(1, nout.getColor());
+            mapColor.put(2, nout.getColor());
+            mapColor.put(3, nout.getColor());
+            mapColor.put(4, nout.getColor());
+
+
+            System.out.println("В наличии cледующие цвета ноутбуков: + Черный(1) и красный(2). " +
+                    "Укажите минимальное значение 1 или 2.");
+            b = reader.nextInt();
+            if (b == 1) {
+                System.out.println("В наличии следующие ноутбуки такого цвета:\n" +
+                        nout + "\n" + nout2 + "\n" + nout3);
+
+            }
+            if (b == 2) {
+                System.out.println("В наличии следующие ноутбуки такого цвета:\n" +
+                        nout4);
+
+            }
+
+
+        }
+
     }
-
 }
-
 
 
 
